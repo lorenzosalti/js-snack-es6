@@ -1,1 +1,31 @@
-console.log('hello world!')
+
+// array contenente oggetti
+const bikes = [
+  {
+    brand: 'Colnago',
+    model: 'V4RS',
+    weight: 7.3
+  },
+  {
+    brand: 'Specialized',
+    model: 'Tarmac SL8',
+    weight: 6.8
+  },
+  {
+    brand: 'Cervèlo',
+    model: 'S5',
+    weight: 7.2
+  },
+  {
+    brand: 'Trek',
+    model: 'Madone SL 7',
+    weight: 7.8
+  },
+  {
+    brand: 'Wilier',
+    model: 'Filante SLR',
+    weight: 6.8
+  }
+]
+
+
