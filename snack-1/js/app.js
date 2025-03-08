@@ -24,8 +24,27 @@ const bikes = [
   {
     brand: 'Wilier',
     model: 'Filante SLR',
-    weight: 6.8
+    weight: 6.9
   }
 ]
 
+const weights = [];
 
+
+console.log(bikes);
+
+for (i = 0; i < bikes.length; i++) {
+  const currentW = bikes[i]['weight'];
+
+  weights.push(parseFloat(currentW));
+}
+
+console.log(weights);
+
+const minWeight = Math.min(...weights);
+
+console.log(`minWeight: ${minWeight}`);
+
+const index = weights.indexOf(minWeight);
+
+console.log(`index: ${index}`);
