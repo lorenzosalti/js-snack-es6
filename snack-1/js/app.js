@@ -28,10 +28,10 @@ const bikes = [
   }
 ]
 
+// array contenente i pesi di tutte le biciclette
 const weights = [];
 
-
-console.log(bikes);
+// console.log(bikes);
 
 for (i = 0; i < bikes.length; i++) {
   const currentW = bikes[i]['weight'];
@@ -39,12 +39,19 @@ for (i = 0; i < bikes.length; i++) {
   weights.push(parseFloat(currentW));
 }
 
-console.log(weights);
+// console.log(weights);
 
+// peso minore dell'array
 const minWeight = Math.min(...weights);
 
-console.log(`minWeight: ${minWeight}`);
+// console.log(`minWeight: ${minWeight}`);
 
+// indice del peso minore
 const index = weights.indexOf(minWeight);
 
-console.log(`index: ${index}`);
+// console.log(`index: ${index}`);
+
+// stampa della bicicletta più leggera
+console.log(`La bicicletta da corsa più leggera è:
+${bikes[index]['brand']} ${bikes[index]['model']}.
+Dal peso di ${bikes[index]['weight']}Kg.`);
