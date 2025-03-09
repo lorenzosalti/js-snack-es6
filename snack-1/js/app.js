@@ -26,7 +26,7 @@ const bikes = [
     model: 'Filante SLR',
     weight: 6.9
   }
-]
+];
 
 // array contenente i pesi di tutte le biciclette
 const weights = [];
