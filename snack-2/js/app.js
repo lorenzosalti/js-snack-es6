@@ -31,19 +31,30 @@ const teams = [
   }
 ];
 
+const foulsDrown = [];
+
+
 // iterazione per inserire numeri randomici in fouls e points
+// e creazioe di un oggetto con nome e falli pushato in un array
 for (let i = 0; i < teams.length; i++) {
+
   const currentFouls = getRandom(0, maxFouls);
   const currentPoints = getRandom(0, maxPoints);
 
-  console.log(currentFouls);
-  console.log(currentPoints);
-
   teams[i].fouls = currentFouls;
   teams[i].points = currentPoints;
-}
 
+  const singleTeam = {};
+
+  singleTeam.name = teams[i].name;
+  singleTeam.fouls = teams[i].fouls;
+
+  foulsDrown.push(singleTeam);
+};
+
+// stampa dei due array di oggetti
 console.log(teams);
+console.log(foulsDrown);
 
 
 // genera un numero intero random tra min e max inclusi
