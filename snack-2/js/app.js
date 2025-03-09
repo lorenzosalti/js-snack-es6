@@ -1,4 +1,8 @@
+// variables
+const maxFouls = 20;
+const maxPoints = 100;
 
+// array of objects describing football teams
 const teams = [
   {
     name: 'Inter',
@@ -27,11 +31,17 @@ const teams = [
   }
 ];
 
+console.log(teams);
 
+for (let i = 0; i < teams.length; i++) {
+  const currentFouls = getRandom(0, maxFouls);
+  const currentPoints = getRandom(0, maxPoints);
 
+  console.log(currentFouls);
+  console.log(currentPoints);
+}
 
-
-
+console.log(teams);
 
 
 // genera un numero intero random tra min e max inclusi
