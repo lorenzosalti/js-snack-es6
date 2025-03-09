@@ -31,14 +31,16 @@ const teams = [
   }
 ];
 
-console.log(teams);
-
+// iterazione per inserire numeri randomici in fouls e points
 for (let i = 0; i < teams.length; i++) {
   const currentFouls = getRandom(0, maxFouls);
   const currentPoints = getRandom(0, maxPoints);
 
   console.log(currentFouls);
   console.log(currentPoints);
+
+  teams[i].fouls = currentFouls;
+  teams[i].points = currentPoints;
 }
 
 console.log(teams);
